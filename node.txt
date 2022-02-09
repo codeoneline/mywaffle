@@ -1,0 +1,12 @@
+
+    "test": "export NODE_ENV=test && mocha"
+    
+    --> tsconfig.json -- esModuleInterop=true, resolveJsonModule=true
+    
+    "test": "export NODE_ENV=test && ts-node"
+
+    /////
+// mocha + ts
+"test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
+
+"test": "export NODE_ENV=test && env TS_NODE_COMPILER_OPTIONS='{\"esModuleInterop\": true, \"resolveJsonModule\": true }' mocha -r ts-node/register 'test/**/*.test.{js,ts}'"
