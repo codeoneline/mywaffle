@@ -6,8 +6,8 @@
   "scripts": {
     "build": "waffle",
     "flatten": "waffle flatten",
-    "test": "export NODE_ENV=test && env TS_NODE_COMPILER_OPTIONS='{\"esModuleInterop\": true, \"resolveJsonModule\": true }' mocha -r ts-node/register 'test/**/*.test.{js,ts}'",
-    "test2": "export NODE_ENV=test && mocha"
+    "test-manual": "export NODE_ENV=test && env TS_NODE_COMPILER_OPTIONS='{\"esModuleInterop\": true, \"resolveJsonModule\": true }' mocha -r ts-node/register 'test/**/*.test.{js,ts}'",
+    "test": "export NODE_ENV=test && mocha"
   },
   "keywords": [],
   "author": "",
