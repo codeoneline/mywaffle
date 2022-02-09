@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import { getDefaultProvider, Wallet } from "ethers";
 import { deployContract } from "ethereum-waffle";
-import SKETokenArtifact from "../build/SKEToken.json";
+import SKETokenArtifact from "../build/BasicToken.json";
 import { SKEToken } from "../types/ethers-contracts/SKEToken";
 
 dotenv.config();
