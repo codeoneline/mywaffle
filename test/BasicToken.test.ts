@@ -11,6 +11,11 @@ describe('BasicToken', () => {
 
   beforeEach(async () => {
     token = await deployContract(wallet, BasicToken, [1000]);
+
+/// linking
+// myLibrary = await deployContract(wallet, MyLibrary, []);
+// link(LibraryConsumer, 'contracts/MyLibrary.sol:MyLibrary', myLibrary.address);
+// libraryConsumer = await deployContract(wallet, LibraryConsumer, []);
   })
 
   it('Assigns initial balance', async() => {

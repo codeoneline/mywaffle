@@ -3,5 +3,25 @@
   "compilerVersion": "0.8.0",
   "sourceDirectory": "./src",
   "outputDirectory": "./build",
-  "flattenOutputDirectory": "./custom_flatten"
+  "flattenOutputDirectory": "./flatten",
+  "compilerOptions": {
+    "outputSelection": {
+      "*": {
+        "*": [
+          "evm.bytecode.object",
+          "evm.deployedBytecode.object",
+          "abi",
+          "evm.bytecode.sourceMap",
+          "evm.deployedBytecode.sourceMap",
+          "metadata"
+        ],
+        "": ["ast"]
+      }
+    },
+    "evmVersion": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 999999
+    }
+  }
 }
